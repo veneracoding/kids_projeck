@@ -1,0 +1,829 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    width:1050px;
+    margin: auto;
+}
+
+
+
+/* Header & navbar */
+
+header{
+    /* width: 100%; */
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(./img/header-background.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    margin-left: 100px; 
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 95px 0;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo{
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 32px;
+   letter-spacing: 0.1px; 
+   color: #ffffff;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links li a,
+.nav-login{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+  color:#ffffff;
+}
+
+.navbar a:hover {
+    color: #96BB7C;
+    transition: color 0.3s ease;
+}
+
+.navbar-right{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-login{
+    line-height: 22px;  
+}
+
+.nav-btn{
+    padding: 15px 25px 15px 25px;
+    gap: 15px;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 22px;
+    background: #96bb7c;
+    font-weight: 700;
+    letter-spacing: 0.1px; 
+    cursor: pointer;
+    transition: all 0.4s ease;  
+}
+
+.nav-btn:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #f5ece6;
+  transform: translateY(-0.25em);
+}
+   
+.nav-btn i{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.hero {
+    margin-top: 150px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.hero p{
+   font-weight: 800;
+   font-size: 17px;
+   line-height: 25px;
+   color: #96bb7c; 
+}
+
+.hero h1{
+    font-family:  Verdana, sans-serif;
+    max-width: 630px;
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    text-align: center;    
+}
+
+.hero h4{
+    max-width: 600px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.hero button{
+    padding: 15px 25px 15px 25px;
+    gap: 15px;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 22px;
+    background: #7ebe50;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.hero button:hover {
+   transform: scale(1.1);
+}
+
+
+
+/* main */
+
+.section-subtitile{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #96BB7C;
+    letter-spacing: 0.2px;
+}
+
+.section-title{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color:#252B42;
+    margin: 10px 1px;
+}
+
+.section-desc{
+    max-width: 460px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.24px;
+    text-align: left;
+    color: #524d4d;
+    top: 55px;
+}
+
+
+
+/* packages section */
+
+.packages{
+    padding:  150px 0;
+}
+
+.packages-bottom{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px ;
+    margin-top: 110px;
+}
+
+.packages-card{
+   padding: 35px 40px; 
+   box-shadow: 5px 13px 19px rgba(28, 20, 20, 0.07);
+   display: flex;
+   flex-direction: column;  
+   align-items: start;
+   row-gap: 20px;
+   flex: 1 240px;
+   transition: all 0.5s ease;
+   cursor: pointer;
+}
+
+.packages-card:nth-child(2){
+   padding-right: 25px; 
+}
+
+.packages-card .card-img{
+    background: #eff8ed;
+    border-radius: 10px; 
+    padding: 22px  19px;
+}
+
+.packages-card:nth-child(2) .card-img{
+    background: #DDF4FF;
+}
+
+.packages-card:nth-child(3) .card-img{
+    background: #faffc1;
+}
+
+.packages-card:nth-child(4) .card-img{
+    background: #FFF2F3;
+}
+
+.packages-card h3{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.12px;
+    text-align: left;
+    color: #252B42;
+}
+
+.red-line{
+    width: 50px;
+    height: 2px;
+    background: red;
+}
+
+.packages-card p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.packages-card:hover{
+     background: #96BB7C;
+     color: white;
+}
+
+.packages-card:hover h3, .packages-card:hover p{
+    color: white;
+}
+
+.packages-card:hover .card-img, .packages-card:hover .red-line{
+    background: white;
+}
+
+
+
+/* education section */
+
+.education{
+    padding: 160px 0;
+    display: flex;
+    justify-content: space-between;
+    gap:30px; 
+    align-items: center;
+}
+
+.education-left{
+    position: relative;
+    flex: 1.5;
+}
+
+.education  .img-main{
+    margin-left: 105px;
+}
+
+.education  .img-background{
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    z-index: -1;
+}
+
+.education .img-stat{
+    position: absolute;
+    left: 0;
+    top: 140px;
+}
+
+.education .img-card{
+    position: absolute;
+    top: 80px;
+    left: 390px;
+}
+
+.education-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 35px;
+}
+
+.education-right .red-line{
+    width: 95px;
+    height: 7px;
+}
+
+.education-right h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.24px;
+    text-align: left;
+    color: #252B42;
+}
+
+.education-right p{
+    max-width: 350px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.24px;
+    text-align: left;
+    color: #737373;
+}
+
+.education-right a{
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 24px;
+    color: #96BB7C;   
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.education-right a i{
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+.education-right a:hover img {
+    transition: all 0.5s ease;
+    transform: translateX(12px);
+}
+
+
+
+/* Courses section */
+
+.courses{
+    padding: 110px 0;
+}
+
+.courses-cards{
+   margin-top: 110px;
+   display: flex;
+   column-gap: 35px;
+}
+
+.card-img-box{
+    position: relative;
+
+}
+
+.card-img-box {
+    width: 100%;
+}
+
+.card-img-box span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #E74040;
+    box-shadow: 0px 2px 4px rgba(0,0, 0 ,0.1);
+    border-radius: 3px;
+    padding: 0  10px; 
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.card-img-box .card-icon {
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+    display: flex;
+    column-gap: 10px;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 45px;
+}
+.card-img-box .card-icon img{
+    font-size: 20px;
+    padding: 10px;
+    background: #FFFFFF; 
+    border-radius: 45px; 
+    transition: all 0.4s ease;   
+}
+
+.card-img-box .card-icon img:hover  {
+    background-color:#E74040 ; 
+    cursor: pointer;
+    color: #ffffff; 
+    transform: scale(1.3);
+}
+
+.card-content{
+  padding: 25px 25px 35px 25px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: start;
+}
+
+.course-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 18px;
+}
+
+.course-details > p{
+    font-style: normal;
+    font-weight: 750;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #689746;
+}
+
+.course-rate{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 5px;
+    background: #2d4059;
+    border-radius: 20px;
+}
+ 
+.course-rate p{
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.course-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #252B42;  
+}
+
+.course-desc{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.sales-box{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;   
+}
+
+.sales-box {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+    text-align: left;
+    color: #757575;
+}
+
+.course-price {
+    display: flex;
+    padding: 5px, 3px, 5px, 3px;
+    column-gap: 7px;
+}
+
+.course-price p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #989393;
+}
+
+.course-price .discount-price {
+    color: #fb9e5c ;
+}
+
+.course-link {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #96bb7c;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #96bb7c;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    transition: all 0.4s ease;
+ }
+
+ .course-link:hover {
+    background: #96BB7C;
+    color: white;
+ }
+
+ .course-link img:hover {
+    background: rgb(223, 117, 117);
+    color: white;
+       background-color: white;
+}
+
+.fa-star{
+    color: #E74040;
+}
+
+ /* testimonals section */
+
+.testimonals {
+    padding: 150px 0;
+}
+
+.testimonals-bottom {
+    margin-top: 95px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.teacher-feedback {
+    padding: 25px 25px 0;   
+}
+
+.img-box {
+   display: flex;
+   justify-content: center;
+}
+
+.img-box img {
+    border-radius: 50%;
+}
+
+.feedback-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    text-align: center;   
+}
+
+.feedback {
+    max-width: 320px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.rate {
+    width: Hug (130.07px)px;
+    height: Hug (22.01px)px;
+    column-gap: 5px;
+    opacity: 0px;
+    justify-content: center;
+}
+
+.teacher-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.12px;
+    text-align: center;
+    height: 24px;
+    color: #252B42;
+}
+
+.teacher-job {
+    margin-top: 5px;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+    text-align: center;
+    color: #737373;
+}
+
+
+
+/* team section */
+
+.team {
+    padding: 110px 0;
+
+}
+
+.team-cards {
+    margin-top: 110px;
+    display: flex;
+    column-gap: 40px;
+    justify-content: space-between;
+}
+
+.member {
+    box-shadow: 0px 13px 19px 0px #00000012;
+    /* box-shadow:  0px 13px 19px rgba(0, 0, 0 ,0.7); */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.member-details {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.member-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.12px;
+    text-align: center;
+    color: #252B42;
+}
+
+.member-job {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.24px;
+    text-align: center;
+    color: #737373;  
+}
+
+.social-networks {
+    display: flex;
+    column-gap: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+
+/* newsletter section */
+
+.newsletter {
+    padding: 160px 0;    
+}
+
+.newsletter-text {
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   text-align: center;
+   column-gap: 15px;
+}
+
+.newsletter-form {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-form input[type="email"] {
+    width: 571px;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px 0 0 5px;
+    padding: 15px 20px;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #737373;
+    height: 60px; /* Qo'shildi: balandlikni tekis qilish uchun */
+    vertical-align: middle; /* Qo'shildi: vertikal tekislash uchun */
+}
+
+.newsletter-form input[type="submit"] {
+    background: #96bb7c;
+    border: 1px solid #E6E6E6;
+    border-radius: 0 5px 5px 0;
+    padding: 15px 22.5px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    margin-left: -5px; /* O'zgartirildi: marginni olib tashlash */
+    height: 60px; /* Qo'shildi: balandlikni tekis qilish uchun */
+    vertical-align: middle; /* Qo'shildi: vertikal tekislash uchun */
+    cursor: pointer;
+}
+
+.newsletter-form input[type="submit"]:hover {
+    background-color: #27341d;
+}
+
+
+/* footer section */
+
+.footer-links {
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    display: flex;
+    column-gap: 30px;
+}
+
+.footer-links-box{
+    min-width: 150px;
+}
+
+.footer-links-box h5 {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.footer-links-box, ul {
+    padding: 0;
+    margin-top: 20px;
+    list-style: none;
+    row-gap: 10px;
+} 
+
+.footer-links-box ul li a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.footer-links-box ul li a:hover {
+    color: #759958;
+}
+
+.footer-links-box ul li img {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.footer-details {
+    padding-top: 25px;
+   background: #f1f1f1;   
+}
+
+.footer-details > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.copyright {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 24px;
+   letter-spacing: 0.2px;
+   color: #737373; 
+}
+
+.footer-details .social-networks {
+    margin-right: 62px;
+}
+
+.date {
+    gap: 15px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    color: #3e4836 ;
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    background: #eff0ee;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    text-align: center;
+    justify-content: center; 
+    text-decoration: underline;
+}
+
+/* vaa nihoyat tugadi tayyor 29.08.2024 14:32pm */
